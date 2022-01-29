@@ -6,7 +6,7 @@
     <title>About</title>
 </head>
 <body class="frame">
-<h1>Flask class task</h1>
+<h1>NLP Parser</h1>
 
 <div>
     <textarea rows="3" v-model="input" class="input_form"></textarea>
