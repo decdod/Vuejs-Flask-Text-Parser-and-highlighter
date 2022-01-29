@@ -1,5 +1,5 @@
 <p align="center">
-<h2>Text parser and highlighter built in Vuejs and Flask using the spacy python library</h2>
+<h3>Text parser and highlighter built in Vuejs and Flask using the spacy python library</h3>
 </p>
 
 This is the development branch of the project
