@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unavailable For Legal Reasons</title>
+</head>
+<body>
+            {% if error %}
+                <h1> {{error}} </h1>
+                <br>
+            {% else %}
+                <h1>Unavailable For Legal Reasons</h1>
+                <p>You must not send requests to tokenize empty texts. The authorities have been notified.</p>
+            {% endif %}
+
+</body>
+</html>

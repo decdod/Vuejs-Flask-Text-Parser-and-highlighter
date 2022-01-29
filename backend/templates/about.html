@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body class="frame">
+<h1>Flask class task</h1>
+<h4>POS tagging - will perform a POST request on submitted form text <br> and return displayed result</h4>
+<form method="post" action="/pos">
+    <div>
+        <textarea rows="3" name="pos_form"></textarea>
+    </div>
+    <button type="submit">Submit Part of Speech tagging text</button>
+</form>
+<br>
+<h4>Entites tagging - will perform a GET request on text from /sampling <br> if there is input but no entities found within it, otherwise POST</h4>
+<form method="post" action="/ner">
+    <div>
+        <textarea rows="3" name="ent_form"></textarea>
+    </div>
+    <button type="submit">Submit Entities tagging text</button>
+</form>
+<br>
+<h4>Results</h4>
+{% if content %}
+    <h2> {{content}} </h2>
+{% else %}
+    <span> </span>
+{% endif %}
+</body>
+</html>
+<style>
+.frame{
+    text-align: center;
+}
+
+</style>
